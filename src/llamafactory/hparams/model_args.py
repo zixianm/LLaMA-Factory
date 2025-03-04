@@ -58,21 +58,13 @@ class ProcessorArguments:
     Arguments pertaining to the image processor.
     """
 
-    image_max_pixels: int = field(
+    image_resolution: int = field(
         default=768 * 768,
         metadata={"help": "The maximum number of pixels of image inputs."},
     )
-    image_min_pixels: int = field(
-        default=32 * 32,
-        metadata={"help": "The minimum number of pixels of image inputs."},
-    )
-    video_max_pixels: int = field(
+    video_resolution: int = field(
         default=256 * 256,
         metadata={"help": "The maximum number of pixels of video inputs."},
-    )
-    video_min_pixels: int = field(
-        default=16 * 16,
-        metadata={"help": "The minimum number of pixels of video inputs."},
     )
     video_fps: float = field(
         default=2.0,

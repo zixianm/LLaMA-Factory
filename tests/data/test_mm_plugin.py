@@ -103,17 +103,15 @@ def _check_plugin(
     expected_no_mm_inputs: Dict[str, Any] = {},
 ) -> None:
     # test mm_messages
-    if plugin.__class__.__name__ != "BasePlugin":
-        assert plugin.process_messages(MM_MESSAGES, IMAGES, NO_VIDEOS, NO_AUDIOS, processor) == expected_mm_messages
-        assert plugin.process_token_ids(INPUT_IDS, LABELS, IMAGES, NO_VIDEOS, NO_AUDIOS, tokenizer, processor) == (
-            expected_input_ids,
-            expected_labels,
-        )
-        _is_close(
-            plugin.get_mm_inputs(IMAGES, NO_VIDEOS, NO_AUDIOS, IMGLENS, NO_VIDLENS, NO_AUDLENS, BATCH_IDS, processor),
-            expected_mm_inputs,
-        )
-
+    assert plugin.process_messages(MM_MESSAGES, IMAGES, NO_VIDEOS, NO_AUDIOS, processor) == expected_mm_messages
+    assert plugin.process_token_ids(INPUT_IDS, LABELS, IMAGES, NO_VIDEOS, NO_AUDIOS, tokenizer, processor) == (
+        expected_input_ids,
+        expected_labels,
+    )
+    _is_close(
+        plugin.get_mm_inputs(IMAGES, NO_VIDEOS, NO_AUDIOS, IMGLENS, NO_VIDLENS, NO_AUDLENS, BATCH_IDS, processor),
+        expected_mm_inputs,
+    )
     # test text_messages
     assert plugin.process_messages(TEXT_MESSAGES, NO_IMAGES, NO_VIDEOS, NO_AUDIOS, processor) == TEXT_MESSAGES
     assert plugin.process_token_ids(INPUT_IDS, LABELS, NO_IMAGES, NO_VIDEOS, NO_AUDIOS, tokenizer, processor) == (
@@ -130,7 +128,7 @@ def _check_plugin(
 
 def test_base_plugin():
     tokenizer_module = _load_tokenizer_module(model_name_or_path=TINY_LLAMA)
-    base_plugin = get_mm_plugin(name="base")
+    base_plugin = get_mm_plugin(name="base", image_token="<image>")
     check_inputs = {"plugin": base_plugin, **tokenizer_module}
     _check_plugin(**check_inputs)
 
