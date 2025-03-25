@@ -22,7 +22,7 @@ overwrite_cache: true
 preprocessing_num_workers: 16
 
 ### output
-output_dir: saves/qwen2_5vl-7b/full/sft/mind2web_convos
+output_dir: /weka/webolmo/checkpoints
 logging_steps: 10
 save_steps: 1000
 plot_loss: true
