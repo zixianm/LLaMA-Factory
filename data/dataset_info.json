@@ -52,6 +52,20 @@
       "assistant_tag": "assistant"
     }
   },
+  "mind2web_convos_lf_no_hover": {
+    "file_name": "mind2web_convos_lf_no_hover.json",
+    "formatting": "sharegpt",
+    "columns": {
+      "messages": "messages",
+      "images": "images"
+    },
+    "tags": {
+      "role_tag": "role",
+      "content_tag": "content",
+      "user_tag": "user",
+      "assistant_tag": "assistant"
+    }
+  },
   "mllm_audio_demo": {
     "file_name": "mllm_audio_demo.json",
     "formatting": "sharegpt",
