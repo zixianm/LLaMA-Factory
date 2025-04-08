@@ -80,6 +80,20 @@
       "assistant_tag": "assistant"
     }
   },
+  "mind2web_convos_lf_past_actions_clean": {
+    "file_name": "/weka/zixianm/WebOlmo/data/mind2web_convos_lf_past_actions_clean.json",
+    "formatting": "sharegpt",
+    "columns": {
+      "messages": "messages",
+      "images": "images"
+    },
+    "tags": {
+      "role_tag": "role",
+      "content_tag": "content",
+      "user_tag": "user",
+      "assistant_tag": "assistant"
+    }
+  },
   "uground_trajs_36k": {
     "file_name": "/weka/zixianm/WebOlmo/data/uground_trajs_lf_36k.json",
     "formatting": "sharegpt",
