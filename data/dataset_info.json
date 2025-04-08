@@ -80,6 +80,20 @@
       "assistant_tag": "assistant"
     }
   },
+  "uground_trajs_36k": {
+    "file_name": "/weka/zixianm/WebOlmo/data/uground_trajs_lf_36k.json",
+    "formatting": "sharegpt",
+    "columns": {
+      "messages": "messages",
+      "images": "images"
+    },
+    "tags": {
+      "role_tag": "role",
+      "content_tag": "content",
+      "user_tag": "user",
+      "assistant_tag": "assistant"
+    }
+  },
   "mllm_audio_demo": {
     "file_name": "mllm_audio_demo.json",
     "formatting": "sharegpt",
