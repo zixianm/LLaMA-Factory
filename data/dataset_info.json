@@ -81,7 +81,7 @@
     }
   },
   "mind2web_convos_lf_past_actions_clean": {
-    "file_name": "/weka/zixianm/WebOlmo/data/mind2web_convos_lf_past_actions_clean.json",
+    "file_name": "/weka/oe-training-default/zixianm/WebOlmo/data/mind2web_convos_lf_past_actions_clean.json",
     "formatting": "sharegpt",
     "columns": {
       "messages": "messages",
@@ -94,8 +94,36 @@
       "assistant_tag": "assistant"
     }
   },
-  "uground_trajs_36k": {
-    "file_name": "/weka/zixianm/WebOlmo/data/uground_trajs_lf_36k.json",
+  "uground_web_direct_249k": {
+    "file_name": "/weka/oe-training-default/zixianm/WebOlmo/data/uground_web_direct_258k_function_filtered_249k.json",
+    "formatting": "sharegpt",
+    "columns": {
+      "messages": "messages",
+      "images": "images"
+    },
+    "tags": {
+      "role_tag": "role",
+      "content_tag": "content",
+      "user_tag": "user",
+      "assistant_tag": "assistant"
+    }
+  },
+  "uground_web_direct_148k": {
+    "file_name": "/weka/oe-training-default/zixianm/WebOlmo/data/uground_web_direct_150k_description_filtered_148k.json",
+    "formatting": "sharegpt",
+    "columns": {
+      "messages": "messages",
+      "images": "images"
+    },
+    "tags": {
+      "role_tag": "role",
+      "content_tag": "content",
+      "user_tag": "user",
+      "assistant_tag": "assistant"
+    }
+  },
+  "uground_web_hybrid_831k": {
+    "file_name": "/weka/oe-training-default/zixianm/WebOlmo/data/uground_web_hybrid_773k_max_25qa_filtered_831k.json",
     "formatting": "sharegpt",
     "columns": {
       "messages": "messages",
