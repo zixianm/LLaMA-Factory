@@ -95,7 +95,7 @@
     }
   },
   "uground_web_direct_249k": {
-    "file_name": "/weka/oe-training-default/zixianm/WebOlmo/data/uground_web_direct_258k_function_filtered_249k.json",
+    "file_name": "/weka/oe-training-default/webolmo/datasets/uground_data/uground_web_direct_258k_function_filtered_249k.json",
     "formatting": "sharegpt",
     "columns": {
       "messages": "messages",
@@ -109,7 +109,7 @@
     }
   },
   "uground_web_direct_148k": {
-    "file_name": "/weka/oe-training-default/zixianm/WebOlmo/data/uground_web_direct_150k_description_filtered_148k.json",
+    "file_name": "/weka/oe-training-default/webolmo/datasets/uground_data/uground_web_direct_150k_description_filtered_148k.json",
     "formatting": "sharegpt",
     "columns": {
       "messages": "messages",
@@ -123,7 +123,21 @@
     }
   },
   "uground_web_hybrid_831k": {
-    "file_name": "/weka/oe-training-default/zixianm/WebOlmo/data/uground_web_hybrid_773k_max_25qa_filtered_831k.json",
+    "file_name": "/weka/oe-training-default/webolmo/datasets/uground_data/uground_web_hybrid_773k_max_25qa_filtered_831k.json",
+    "formatting": "sharegpt",
+    "columns": {
+      "messages": "messages",
+      "images": "images"
+    },
+    "tags": {
+      "role_tag": "role",
+      "content_tag": "content",
+      "user_tag": "user",
+      "assistant_tag": "assistant"
+    }
+  },
+  "flattened_uground_web_hybrid_831k": {
+    "file_name": "/weka/oe-training-default/webolmo/datasets/uground_data/flattened_uground_web_hybrid_773k_max_25qa_filtered_831k.json",
     "formatting": "sharegpt",
     "columns": {
       "messages": "messages",
